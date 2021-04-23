@@ -1,0 +1,31 @@
+.nav .navItem {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  line-height: 50px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+}
+
+.navItem:nth-child(1){
+  width: 100px;
+}
+
+.navItem:nth-child(2){
+  width: 100px;
+}
+
+.navItem:nth-child(3){
+  width: 100px;
+}
+
+.navItem:nth-child(4){
+  width: 100px;
+}
+
+.navItem:nth-child(5){
+  width: 100px;
+  margin-right: 20px;
+}

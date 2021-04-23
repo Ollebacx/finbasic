@@ -1,0 +1,55 @@
+.header{
+  white-space:nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.header::-webkit-scrollbar{
+  display: none;
+}
+
+.nav {
+  position: relative;
+  width: 500px;
+  height: 50px;
+  /* background: #34495e; */
+  border-radius: 10px;
+  font-size:0px;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+
+.nav .animation {
+  position: absolute;
+  height: 70%;
+  top: 15%;
+  left:0;
+  z-index: 0;
+  background-color: #2e2e2e;
+  border-radius: 8px;
+  transition: all .5s ease-in-out 0s;
+}
+
+.nav .start-home {
+  width: 80px;
+  left: 10px
+}
+
+.nav .start-budget {
+  width: 100px;
+  left: 100px
+}
+
+.nav .start-monthly {
+  width: 100px;
+  left: 200px
+}
+
+.nav .start-analysis {
+  width: 100px;
+  left: 300px
+}
+
+.nav .start-categories {
+  width: 100px;
+  left: 400px
+}

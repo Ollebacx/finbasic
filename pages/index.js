@@ -1,9 +1,9 @@
 import styles from '../styles/Home.module.css'
 
-const Home = () => (
+const Home = ({data}) => (
     <div className={styles.container}>
       <main className={styles.main}>
-
+        {data}
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
@@ -36,5 +36,12 @@ const Home = () => (
       </main>
     </div>
   )
+
+  export async function getStaticProps(){
+    const data = 'hola'
+    return { 
+      props: { data }
+    }
+}
 
   export default Home

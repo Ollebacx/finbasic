@@ -26,7 +26,7 @@
   z-index: 0;
   background-color: #2e2e2e;
   border-radius: 8px;
-  transition: all .5s ease-in-out 0s;
+  transition: all .3s ease-in 0s;
 }
 
 .nav .start-home {

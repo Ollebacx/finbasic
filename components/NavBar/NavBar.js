@@ -16,13 +16,13 @@ const NavBar = (params) => {
 
   return (
     <header id='header' className={className.header}>
-      <nav className={className.nav}>
-        <NavItem route={Routing.home} text='Cuentas' currentRoutePathName={currentRoutePathName} />
-        <NavItem route={Routing.budget} text='Presupuesto' currentRoutePathName={currentRoutePathName} />
-        <NavItem route={Routing.monthly} text='Mensual' currentRoutePathName={currentRoutePathName} />
-        <NavItem route={Routing.analysis} text='Análisis' currentRoutePathName={currentRoutePathName} />
-        <NavItem route={Routing.categories} text='Categorías' currentRoutePathName={currentRoutePathName} />
-        <div className={`${className.animation} ${className[`start-${currentRoutePathName}`]}`}></div>
+      <nav id='nav' className={className.nav}>
+        <NavItem hrefRoute={Routing.home} text='Cuentas' currentRoutePathName={currentRoutePathName} />
+        <NavItem hrefRoute={Routing.budget} text='Presupuesto' currentRoutePathName={currentRoutePathName} />
+        <NavItem hrefRoute={Routing.monthly} text='Mensual' currentRoutePathName={currentRoutePathName} />
+        <NavItem hrefRoute={Routing.analysis} text='Análisis' currentRoutePathName={currentRoutePathName} />
+        <NavItem hrefRoute={Routing.categories} text='Categorías' currentRoutePathName={currentRoutePathName} />
+        <div id='activeModule' className={`${className.animation} ${className[`start-${currentRoutePathName}`]}`}></div>
       </nav>
     </header>
   )
